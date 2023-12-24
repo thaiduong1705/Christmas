@@ -87,7 +87,7 @@ body {
 	color: crimson;
 	margin-top: 40px;
 	font-family: "Parisienne", cursive;
-	font-size: 50px;
+	font-size: 48px;
 }
 
 .text {
@@ -100,4 +100,34 @@ body {
 }
 .text p {
 	margin: 4px 0px;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 740px) {
+	body {
+		margin: 0;
+		display: flex;
+		height: 100vh;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.card {
+		height: 300px;
+		width: 200px;
+	}
+	.right-card {
+		height: 300px;
+		width: 200px;
+	}
+	.right-card h2 {
+		margin-top: 20px;
+		font-size: 20px;
+	}
+	.text {
+		margin: 0 8px;
+		font-size: 8px;
+	}
+	.card.open {
+		left: 0;
+	}
 }
